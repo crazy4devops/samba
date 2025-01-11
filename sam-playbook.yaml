@@ -1,0 +1,32 @@
+---
+- name: Samba Server
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Include Samba Server role
+      ansible.builtin.include_role:
+        name: vladgh.samba.server
+      vars: 
+        samba_apple_extensions: true
+        samba_netbios_name: NAS
+        samba_server_string: NAS
+        samba_workgroup: WORKGROUP
+        samba_load_printers: false
+        samba_create_varwww_symlinks: true
+        samba_log: /var/log/samba.log
+        samba_log_size: 60000
+        samba_log_level: '3 passdb:5 auth:10 winbind:2 '
+        samba_map_to_guest: Never
+        samba_shares_root: /srv/data
+        samba_shares:
+          - name: publicshare
+            comment: 'Public share, writeable by all members of group ‘users’'
+            public: true
+            write_list: +users
+            group: users
+            browseable: true
+          - name: guestshare
+            comment: 'Share accessible for guests'
+            guest_ok: true
+            writeable: true
+            browseable: true

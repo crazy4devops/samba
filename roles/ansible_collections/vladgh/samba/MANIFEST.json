@@ -1,0 +1,33 @@
+{
+ "collection_info": {
+  "namespace": "vladgh",
+  "name": "samba",
+  "version": "3.4.0",
+  "authors": [
+   "Vlad Ghinea <vlad@ghn.me> (https://ghn.me)",
+   "Bert Van Vreckem"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "samba",
+   "system",
+   "networking"
+  ],
+  "description": "Ansible collection used to install and configure Samba.",
+  "license": [],
+  "license_file": "LICENSE",
+  "dependencies": {},
+  "repository": "https://github.com/vladgh/ansible-collection-vladgh-samba",
+  "documentation": "https://github.com/vladgh/ansible-collection-vladgh-samba",
+  "homepage": "https://github.com/vladgh/ansible-collection-vladgh-samba",
+  "issues": "https://github.com/vladgh/ansible-collection-vladgh-samba/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "d6f5962ad7d5fbfdb2d9a63c8dc71524780ceb0762ba158b0140b59417e98ddc",
+  "format": 1
+ },
+ "format": 1
+}

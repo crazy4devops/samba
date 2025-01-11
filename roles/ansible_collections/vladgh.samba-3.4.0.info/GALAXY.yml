@@ -1,0 +1,8 @@
+download_url: https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/vladgh-samba-3.4.0.tar.gz
+format_version: 1.0.0
+name: samba
+namespace: vladgh
+server: https://galaxy.ansible.com/api/
+signatures: []
+version: 3.4.0
+version_url: /api/v3/plugin/ansible/content/published/collections/index/vladgh/samba/versions/3.4.0/
